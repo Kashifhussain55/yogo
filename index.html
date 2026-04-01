@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yogo — Ride Your Way</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">yo<span>go</span></div>
+  <ul class="nav-links">
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Yogo</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="btn-ghost" onclick="openModal()">Book a Ride</button>
+    <button class="btn-primary">Driver Sign Up</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-overlay"></div>
+  <div class="hero-left">
+    <div class="hero-badge">🟢 Now available in 40+ cities</div>
+    <h1 class="hero-title">
+      You set<br/>
+      the <em>price.</em><br/>
+      We find<br/>
+      your driver.
+    </h1>
+    <p class="hero-sub">
+      Yogo puts you in control. Bid your fare, negotiate in real-time, and ride with drivers who actually agree. No surge, no surprises.
+    </p>
+    <div class="hero-cta">
+      <button class="btn-primary btn-lg" onclick="openModal()">Book Now →</button>
+      <button class="btn-ghost btn-lg" onclick="document.getElementById('how').scrollIntoView({behavior:'smooth'})">See how it works</button>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">4.2M+</div>
+        <div class="stat-label">Happy Riders</div>
+      </div>
+      <div>
+        <div class="stat-num">98K+</div>
+        <div class="stat-label">Verified Drivers</div>
+      </div>
+      <div>
+        <div class="stat-num">40+</div>
+        <div class="stat-label">Cities Covered</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="phone-wrap">
+      <!-- Floating cards -->
+      <div class="float-card top-left">
+        <div class="fc-label">Your offer</div>
+        <div class="fc-value">$8.50</div>
+        <div class="fc-sub">2 drivers bidding</div>
+      </div>
+      <div class="float-card bottom-right">
+        <div class="fc-label">ETA</div>
+        <div class="fc-value">3 min</div>
+        <div class="fc-sub">Ahmed A. • ⭐ 4.9</div>
+      </div>
+
+      <div class="phone">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="phone-map">
+            <div class="map-road road-h"></div>
+            <div class="map-road road-v"></div>
+            <div class="map-road road-d"></div>
+            <div class="map-pin"><div class="map-pin-dot"></div></div>
+            <div class="map-car">🚗</div>
+          </div>
+          <div class="phone-input-row">
+            <div class="phone-field">
+              <div class="field-dot green"></div>
+              <span class="field-text">Current location</span>
+            </div>
+            <div class="phone-field">
+              <div class="field-dot red"></div>
+              <span class="field-text">Where to?</span>
+            </div>
+          </div>
+          <div class="phone-price-row">
+            <div class="price-chip">
+              <span class="amount">$6</span>
+              Economy
+            </div>
+            <div class="price-chip active">
+              <span class="amount">$8.50</span>
+              Your bid
+            </div>
+            <div class="price-chip">
+              <span class="amount">$12</span>
+              Premium
+            </div>
+          </div>
+          <button class="phone-btn">FIND MY DRIVER</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="section-tag">Simple Process</div>
+  <h2 class="section-title">How Yogo works</h2>
+  <div class="how-grid">
+    <div class="step-card reveal">
+      <div class="step-num">01</div>
+      <div class="step-icon">📍</div>
+      <div class="step-title">Set your pickup</div>
+      <p class="step-desc">Enter your starting point and destination. Our map auto-detects your location instantly.</p>
+    </div>
+    <div class="step-card reveal">
+      <div class="step-num">02</div>
+      <div class="step-icon">💬</div>
+      <div class="step-title">Name your price</div>
+      <p class="step-desc">Bid what you think is fair. Drivers near you see your offer and respond in real time.</p>
+    </div>
+    <div class="step-card reveal">
+      <div class="step-num">03</div>
+      <div class="step-icon">🤝</div>
+      <div class="step-title">Negotiate & agree</div>
+      <p class="step-desc">Chat with drivers, counter-offer, or accept instantly. Full transparency, zero algorithms.</p>
+    </div>
+    <div class="step-card reveal">
+      <div class="step-num">04</div>
+      <div class="step-icon">🚀</div>
+      <div class="step-title">Ride & rate</div>
+      <p class="step-desc">Your driver arrives, you ride, you rate. It's that human. Every time.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-header">
+    <div>
+      <div class="section-tag">What We Offer</div>
+      <h2 class="section-title">Pick your ride type</h2>
+    </div>
+    <button class="btn-ghost">View all services →</button>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="svc-emoji">🚗</div>
+      <div class="svc-title">Yogo Economy</div>
+      <p class="svc-desc">Everyday rides at budget-friendly prices. Fast pickup, no fuss. Perfect for daily commutes.</p>
+      <div class="svc-price"><span class="from">from</span> $3.00</div>
+    </div>
+    <div class="service-card featured reveal">
+      <div class="svc-emoji">✨</div>
+      <div class="svc-title">Yogo Comfort</div>
+      <p class="svc-desc">Newer cars, more legroom, top-rated drivers. The sweet spot between budget and luxury.</p>
+      <div class="svc-price"><span class="from">from</span> $6.50</div>
+    </div>
+    <div class="service-card reveal">
+      <div class="svc-emoji">👑</div>
+      <div class="svc-title">Yogo Black</div>
+      <p class="svc-desc">Premium vehicles, professional drivers, meet & greet. Arrive like you mean it.</p>
+      <div class="svc-price"><span class="from">from</span> $14.00</div>
+    </div>
+    <div class="service-card reveal">
+      <div class="svc-emoji">👨‍👩‍👧‍👦</div>
+      <div class="svc-title">Yogo Family</div>
+      <p class="svc-desc">Spacious SUVs for up to 6 passengers. Child seats available on request.</p>
+      <div class="svc-price"><span class="from">from</span> $9.00</div>
+    </div>
+    <div class="service-card reveal">
+      <div class="svc-emoji">📦</div>
+      <div class="svc-title">Yogo Cargo</div>
+      <p class="svc-desc">Move your stuff across the city. Vans and trucks for light deliveries and small moves.</p>
+      <div class="svc-price"><span class="from">from</span> $11.00</div>
+    </div>
+    <div class="service-card reveal">
+      <div class="svc-emoji">🛵</div>
+      <div class="svc-title">Yogo Moto</div>
+      <p class="svc-desc">Zip through traffic on a motorbike. Fastest option in congested city centres.</p>
+      <div class="svc-price"><span class="from">from</span> $2.00</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY YOGO -->
+<section id="why">
+  <div class="section-tag">Our Advantage</div>
+  <h2 class="section-title" style="margin-bottom:3rem;">Why riders choose Yogo</h2>
+  <div class="why-grid">
+    <div class="why-visual">
+      <div class="why-circle">
+        <div class="orbit-dot"></div>
+        <div class="orbit-dot"></div>
+        <div class="orbit-dot"></div>
+        <div class="orbit-dot"></div>
+        <div class="why-circle-inner">🛡️</div>
+      </div>
+    </div>
+    <div class="why-features">
+      <div class="why-item reveal">
+        <div class="why-icon">💰</div>
+        <div class="why-text">
+          <h4>You control the fare</h4>
+          <p>No black-box pricing or surge multipliers. You bid, drivers compete — the market decides the fair price.</p>
+        </div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-icon">🔒</div>
+        <div class="why-text">
+          <h4>Verified & insured drivers</h4>
+          <p>Every driver passes identity checks, license verification, and background screening before their first ride.</p>
+        </div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-icon">📡</div>
+        <div class="why-text">
+          <h4>Live ride sharing</h4>
+          <p>Share your trip with family in one tap. Real-time GPS tracking keeps loved ones informed, always.</p>
+        </div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-icon">⚡</div>
+        <div class="why-text">
+          <h4>Instant matching</h4>
+          <p>Average match time under 90 seconds. Nearby drivers see your offer the moment you submit it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-tag">Reviews</div>
+  <h2 class="section-title">Riders love Yogo</h2>
+  <div class="reviews-grid">
+    <div class="review-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"I offered $7 for a ride that usually costs $12 on other apps. A driver accepted in 40 seconds. Haven't gone back since."</p>
+      <div class="reviewer">
+        <div class="avatar">😊</div>
+        <div>
+          <div class="reviewer-name">Sara M.</div>
+          <div class="reviewer-role">Daily commuter, Karachi</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"As a driver, I actually earn more here because I choose which rides to accept. The bidding system is fair for everyone."</p>
+      <div class="reviewer">
+        <div class="avatar">🙂</div>
+        <div>
+          <div class="reviewer-name">Raza K.</div>
+          <div class="reviewer-role">Yogo Driver, Lahore</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal">
+      <div class="stars">★★★★☆</div>
+      <p class="review-text">"The live share feature is everything. My parents always know where I am. And the cars are always clean and on time."</p>
+      <div class="reviewer">
+        <div class="avatar">😄</div>
+        <div>
+          <div class="reviewer-name">Aisha T.</div>
+          <div class="reviewer-role">Student, Islamabad</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section id="download">
+  <div class="section-tag">Get The App</div>
+  <h2 class="section-title">Download Yogo.<br/>Ride on your terms.</h2>
+  <p>Available on iOS and Android. Free to download, free to use.</p>
+  <div class="app-btns">
+    <a href="#" class="app-btn">
+      <span class="app-btn-icon">🍎</span>
+      <span class="app-btn-text">
+        <small>Download on the</small>
+        <strong>App Store</strong>
+      </span>
+    </a>
+    <a href="#" class="app-btn">
+      <span class="app-btn-icon">▶️</span>
+      <span class="app-btn-text">
+        <small>Get it on</small>
+        <strong>Google Play</strong>
+      </span>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="logo">yo<span>go</span></span>
+      <p>Transparent, fair, human ridesharing. Available across 40+ cities and growing every month.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Riders</h5>
+      <ul>
+        <li><a href="#">How to ride</a></li>
+        <li><a href="#">Safety</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Drivers</h5>
+      <ul>
+        <li><a href="#">Become a driver</a></li>
+        <li><a href="#">Driver app</a></li>
+        <li><a href="#">Earnings</a></li>
+        <li><a href="#">Insurance</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Yogo Technologies. All rights reserved.</p>
+    <div class="footer-socials">
+      <a class="social-btn" href="#">𝕏</a>
+      <a class="social-btn" href="#">in</a>
+      <a class="social-btn" href="#">📸</a>
+    </div>
+  </div>
+</footer>
+
+<!-- BOOKING MODAL -->
+<div class="modal-overlay" id="modal" onclick="handleOverlayClick(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-title">Book a ride 🚗</div>
+    <p class="modal-sub">Set your pickup, destination, and your offer price.</p>
+    <input class="modal-field" type="text" placeholder="📍 Pickup location"/>
+    <input class="modal-field" type="text" placeholder="🏁 Destination"/>
+    <div class="modal-row">
+      <input class="modal-field" type="text" placeholder="💰 Your bid (e.g. $8.00)" style="flex:1;margin-bottom:0"/>
+      <input class="modal-field" type="text" placeholder="👤 Passengers" style="flex:1;margin-bottom:0"/>
+    </div>
+    <div style="height:0.8rem"></div>
+    <button class="btn-primary" style="width:100%;padding:1rem;font-size:1rem;border-radius:12px;font-family:'Syne',sans-serif;font-weight:700;" onclick="closeModal()">
+      Find Drivers →
+    </button>
+  </div>
+</div>
+
+<script>
+  // Modal
+  function openModal() {
+    document.getElementById('modal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal() {
+    document.getElementById('modal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function handleOverlayClick(e) {
+    if (e.target === e.currentTarget) closeModal();
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
